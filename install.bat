@@ -1,4 +1,5 @@
-:: Install java runtime for internet
+:: Install java runtime from internet
+:: Install Node JS runtime from internet
 
 :: installs protractor
 npm install -g protractor
