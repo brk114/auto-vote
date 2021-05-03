@@ -3,7 +3,7 @@ describe("Vote for every half an hour", function () {
     browser.ignoreSynchronization = true;
     browser.get("https://mycutebaby.in/contest/participant/?n=6087d086ca7c4");
 
-    browser.sleep(10000);
+    browser.sleep(7000);
 
     var voteBtn = element(by.css("#vote_btn"));
     // printing current votes count
@@ -13,7 +13,7 @@ describe("Vote for every half an hour", function () {
     console.log("Found button");
     // var voteForm = element(by.css("#votefrm_sec"));
     // if (voteForm) voteForm.submit();
-    browser.sleep(5000);
+    // browser.sleep(5000);
 
     if (voteBtn) {
       voteBtn.click();
