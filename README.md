@@ -1,4 +1,4 @@
-# About
+# Auto-vote Scheduler
 
 Auto schedule voting code is here,
 go though install.bat and install dependencies first,
