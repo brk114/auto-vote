@@ -9,10 +9,11 @@ if "%HOUR:~0,1%" == " " (SET dtStamp=%dtStamp9%) else (SET dtStamp=%dtStamp24%)
 
 ECHO %date% %time%
 ECHO %dtStamp%
+echo %ABS_PATH%
 
-SET filename=C:\ravib\r\auto-vote\logs\log_%dtStamp%.log 2>&1
+SET filename=%ABS_PATH%\logs\log_%dtStamp%.log 2>&1
 set filename=%filename: =%
 echo %filename%
-protractor C:\ravib\r\auto-vote\conf.js > %filename%
+protractor %ABS_PATH%\conf.js > %filename%
 
 goto :eof
