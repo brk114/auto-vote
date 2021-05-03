@@ -5,5 +5,5 @@
 :: more details about protractor here : https://www.protractortest.org/#/
 npm install -g protractor
 
-:: Updated webdriver manager
+:: Updates webdriver manager
 webdriver-manager update
