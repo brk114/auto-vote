@@ -6,8 +6,8 @@ then start the voting using by running the files `start-webdriver.bat` and `star
 
 ## Installation
 
-1. Install the Java runtime
-2. Install the NodeJS latest LTS runtime.
+1. Install the Java runtime. Download link [here](https://java-runtime-environment.en.softonic.com/download).
+2. Install the NodeJS latest LTS runtime. Download link [here](https://nodejs.org/en/download/).
 3. Then install the protractor from commands in `install.bat`.
 4. Update the web driver from commands in `install.bat`.
 
