@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AutoVote": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\ravib\\r\\auto-vote\\cast-vote.bat 1"
+    }
+  }
+}

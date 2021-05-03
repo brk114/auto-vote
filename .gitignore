@@ -1,2 +1,6 @@
 **/log
 **/*.log
+**/.vs
+**/.vscode
+**/bin
+**/obj
