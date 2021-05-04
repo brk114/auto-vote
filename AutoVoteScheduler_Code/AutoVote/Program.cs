@@ -30,11 +30,12 @@ namespace AutoVote
 
             var job = new SimpleParameterizedJob<string>((parameter, scheduledTime) =>
             {
-                Console.WriteLine($"{parameter} \t Started : {DateTime.Now:o}");
+                Console.WriteLine($"{parameter} \t Started : {DateTime.Now}");
                 System.Diagnostics.Process.Start(executablePath);
+                Console.WriteLine($"{parameter} \t Completed : {DateTime.Now}");
             });
 
-            var schedule = new EveryXTimeSchedule(TimeSpan.FromMinutes(30.5));
+            var schedule = new EveryXTimeSchedule(TimeSpan.FromMinutes(30.25));
 
             //var scheduledJob = singularity.ScheduleParameterizedJob(
             //    schedule, job, "Hello World", true); //starts immediately

@@ -9,7 +9,6 @@ if "%HOUR:~0,1%" == " " (SET dtStamp=%dtStamp9%) else (SET dtStamp=%dtStamp24%)
 
 ECHO %date% %time%
 ECHO %dtStamp%
-echo %ABS_PATH%
 
 SET filename=%ABS_PATH%\logs\log_%dtStamp%.log 2>&1
 set filename=%filename: =%
