@@ -2,7 +2,7 @@
 
 Auto schedule voting code is here,
 go though install.bat and install dependencies first,
-then start the voting using by running the files `start-webdriver.bat` and `start-voting.bat`
+then start the voting using by running the file `start-voting.bat`
 
 ## Installation
 
@@ -13,5 +13,6 @@ then start the voting using by running the files `start-webdriver.bat` and `star
 
 ## Running the scheduler
 
-1. Start the web driver by running the `start-webdriver.bat`
-2. Start the scheduler by running the `start-voting.bat`
+1. Start the scheduler by running the `start-voting.bat`, this will also starts the web driver by running the `start-webdriver.bat` in another terminal window.
+
+Note: Make sure the webdriver is not running before starting the vote scheduler.

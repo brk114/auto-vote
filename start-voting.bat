@@ -21,4 +21,9 @@ IF "%arg1%"=="" set "arg1=0"
 echo Initial Delay(in minutes): %arg1%
 :: The number along with AutoVote.exe is initial delay(in minutes) to start the job, 
 :: The job will execute every 30.5 minutes
-%ABS_PATH%\vote-sheduler\AutoVote.exe %ABS_PATH%\cast-vote.bat %arg1%
+IF NOT EXIST "%ABS_PATH%\AutoVoteScheduler_Code\AutoVote\bin\Debug\netcoreapp3.1\AutoVote.exe" (
+    dotnet build %ABS_PATH%\AutoVoteScheduler_Code\AutoVote
+)
+
+start cmd /k Call start-webdriver.bat
+%ABS_PATH%\AutoVoteScheduler_Code\AutoVote\bin\Debug\netcoreapp3.1\AutoVote.exe %ABS_PATH%\cast-vote.bat %arg1%

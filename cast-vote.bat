@@ -1,5 +1,4 @@
 @echo off   
-@REM start cmd /k Call start-webdriver.bat
 
 SET HOUR=%time:~0,2%
 SET dtStamp9=%date:~-4%-%date:~4,2%%date:~0,2%_0%time:~1,1%-%time:~3,2%-%time:~6,2% 
