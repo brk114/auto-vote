@@ -30,9 +30,9 @@ namespace AutoVote
 
             var job = new SimpleParameterizedJob<string>((parameter, scheduledTime) =>
             {
-                Console.WriteLine($"{parameter} \t Started : {DateTime.Now}");
+                Console.WriteLine($"{parameter} \t Trigger Started : {DateTime.Now}");
                 System.Diagnostics.Process.Start(executablePath);
-                Console.WriteLine($"{parameter} \t Completed : {DateTime.Now}");
+                Console.WriteLine($"{parameter} \t Trigger Completed : {DateTime.Now}");
             });
 
             var schedule = new EveryXTimeSchedule(TimeSpan.FromMinutes(30.25));
