@@ -13,7 +13,7 @@ rem // Restore original directory
 popd
 
 echo Relative path: %REL_PATH%
-echo Maps to path: %ABS_PATH%\cast-vote.bat
+echo Maps to path: %ABS_PATH%
 
 set "arg1=%1"
 IF "%arg1%"=="" set "arg1=0"
@@ -25,5 +25,7 @@ IF NOT EXIST "%ABS_PATH%\AutoVoteScheduler_Code\AutoVote\bin\Debug\netcoreapp3.1
     dotnet build %ABS_PATH%\AutoVoteScheduler_Code\AutoVote
 )
 
+:: starting web driver
 start cmd /k Call start-webdriver.bat
+:: starting the auto vote scheduler
 %ABS_PATH%\AutoVoteScheduler_Code\AutoVote\bin\Debug\netcoreapp3.1\AutoVote.exe %ABS_PATH%\cast-vote.bat %arg1%
