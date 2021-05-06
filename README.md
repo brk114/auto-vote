@@ -8,8 +8,9 @@ then start the voting using by running the file `start-voting.bat`
 
 1. Install the Java runtime. Download link [here](https://java-runtime-environment.en.softonic.com/download).
 2. Install the NodeJS latest LTS runtime. Download link [here](https://nodejs.org/en/download/).
-3. Then install the protractor from commands in `install.bat`.
-4. Update the web driver from commands in `install.bat`.
+3. Install the dotnet core 3.1 runtime. Download link [here](https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-3.1.14-windows-x64-installer).
+4. Then install the protractor from commands in `install.bat`.
+5. Update the web driver from commands in `install.bat`.
 
 ## Running the scheduler
 
