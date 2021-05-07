@@ -2,5 +2,4 @@
 **/*.log
 **/.vs
 **/.vscode
-**/bin
 **/obj
