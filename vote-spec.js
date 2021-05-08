@@ -1,7 +1,7 @@
 describe("Vote for every half an hour", function () {
   it("should cast a vote", function () {
     browser.ignoreSynchronization = true;
-    browser.get("https://mycutebaby.in/contest/participant/?n=6087d086ca7c4");
+    browser.get("https://mycutebaby.in/contest/participant/?n=6096b9231094f");
 
     browser.sleep(6000);
 
