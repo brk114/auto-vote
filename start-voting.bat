@@ -30,6 +30,9 @@ IF NOT EXIST "%SCHEDULER_EXE_PATH%\AutoVote.exe" (
 )
 
 :: starting web driver
-start cmd /k Call start-webdriver.bat
+@REM start cmd /k Call start-webdriver.bat
 :: starting the auto vote scheduler
 %SCHEDULER_EXE_PATH%\AutoVote.exe %ABS_PATH%\cast-vote.bat %arg1%
+
+@REM Open browser with another configured profile
+@REM "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --user-data-dir=C:\Users\ravib\AppData\Local\BraveSoftware\Brave-Browser\Protractor

@@ -13,6 +13,9 @@ ECHO %date% %time%
 :: SET filename=%filename: =%
 :: ECHO %filename%
 
+@REM mshta vbscript:Execute("CreateObject(""SAPI.SpVoice"").Speak(""Voting for Hanvika"")(window.close)")
+
+rundll32 user32.dll,MessageBeep
 protractor %ABS_PATH%\conf.js 
 ::protractor %ABS_PATH%\conf.js > %filename%
 ECHO Voting completed at: %date% %time%
